@@ -1,58 +1,96 @@
-/* 1. Container do card */
-.card {
-  /* background: (cor ou imagem de fundo); */
-  /* width: (largura fixa ou responsiva); */
-  /* margin: (centralizar no body ou espaçamento externo); */
-  /* border: (largura, estilo, cor); */
-  /* border-radius: (arredondar cantos); */
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap');
+
+body{
+    font-family: "Vollkorn";
+    font-size: px;
+}
+h1,h2,h3,h4{
+    font-family: "Suez one";
+}
+.container{
+    max-width: 1252px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.hero{
+    padding: 210px 0;
+    text-align: center;
+    font-size: 30px;
+    background: #f6f6f6;
+    color: #3D537c;
+
+
+
+}
+.grid{
+    display: flex;
 }
 
-/* 2. Imagem do perfil */
-.card figure img {
-  /* width: 100%; */
-  /* height: auto; */
-  /* display: (bloco); */
+.hero-subtitle{
+    font-weight: bold;
+    
+
+}
+.hero-title{
+    font-size: 150px;
+    
+
+}
+.hero-text{}
+
+.content-block{
+    display: flex;
+    flex-direction: space-between;
+    justify-content: space-between;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.direction-coluna{
+    flex-direction: column;
+}
+.content-wrapper{
+    width: 100%;
 }
 
-/* 3. Corpo do card */
-.card-body {
-  /* padding: (espaço interno); */
+.content-block h2{
+font-size: 60px;
+}
+.content-wrapper{
+width: 50%;
 }
 
-/* 4. Título */
-.card-title {
-  /* font-size: (tamanho do título); */
-  /* font-weight: (negrito ou normal); */
-  /* margin-top: (espaçamento acima do título); */
-  /* margin-bottom: (espaçamento abaixo do título); */
-  /* color: (cor do texto); */
+/* celular*/
+@media (max-width: 767px){
+
+    .hero-title{
+        font-size: 54px; 
+        color: chartreuse;
+    }  
+    .content-block{
+        flex-direction: column;
+        padding: 0 24px;
+    }
+    .content-wrapper{
+        width: 100%;
+    }
+    
 }
 
-/* 5. Subtítulo */
-.card-subtitle {
-  /* font-size: (um pouco menor que o título); */
-  /* font-weight: (peso da fonte); */
-  /* margin-bottom: (espaço antes do parágrafo); */
-  /* color: (cor mais suave); */
-}
+/* tablet em retrato*/
+@media (min-width: 768px) and (max-width: 900px){
 
-/* 6. Texto descritivo */
-.card-text {
-  /* font-size: (tamanho legível); */
-  /* margin-bottom: (espaço antes do botão); */
-  /* color: (cor do texto principal); */
+.hero-title{
+    font-size: 70px; 
+    color: red;
 }
+.content-block{
+    flex-direction: column;
+    padding: 0 24px;}
 
-/* 7. Botão */
-.card-btn {
-  /* display: (em linha e bloco); */
-  /* padding: (espaço interno do botão); */
-  /* background-color: (cor de fundo do botão); */
-  /* color: (cor do texto do botão); */
-  /* text-decoration: none; */
-  /* text-align: center; */
-  /* font-weight: bold; */
-  /* border-radius: (arredondar cantos); */
+    .content-wrapper{
+        width: 100%;
+    }
+
 }
-
-/* --- FIM DO CSS SCAFFOLDING --- */
