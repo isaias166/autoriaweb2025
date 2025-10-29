@@ -1,0 +1,126 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+body {
+    font: 16px/1.6 system-ui, sans-serif;
+    color: #374151;
+    background: #f6f7f8;
+}
+
+
+.h1 { font-size: 32px; font-weight: 800; } 
+.muted { color: #6b7280; }
+.primary { color: #c62828; }
+
+.mt-2 { margin-top: 8px; }  
+.mt-4 { margin-top: 16px; }  
+.mb-2 { margin-bottom: 8px; } 
+.mb-4 { margin-bottom: 16px; }
+
+.p-2 { padding: 8px; }  
+.p-3 { padding: 16px; } 
+
+.text-center { text-align: center; }
+
+/* CHIPS / CATEGORIAS */
+.chip {
+    border: px solid #e57373;
+    border-radius: px;
+    padding: 4px 8px; 
+    color: #c62828;
+    background: #fff;
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; 
+    margin-top: 8px; 
+    margin-bottom: 16px; 
+}
+
+
+.container {
+    max-width: 1100px;
+    margin-inline: auto;
+    padding-inline: 16px;
+}
+
+.flex { display: flex; }
+.items-center { align-items: center; }
+.between { justify-content: space-between; }
+.gap-2 { gap: 8px; } 
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+}
+.col-12 { flex: 1 1 100%; }
+.col-6 { flex: 1 1 100%; }
+
+@media (min-width: 768px) {
+    .col-6 { flex: 1 1 calc(50% - 16px); } 
+    .hide-mobile { display: none; }
+}
+
+@media (min-width: 1024px) {
+    .h1 { font-size: 40px; } 
+}
+
+header {
+    position: relative;
+    padding: 8px 0;  
+    margin-bottom: 32px; 
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;       
+    background-color: #c62828;
+    z-index: -1;    
+}
+
+.logo img{
+    width: 300px;
+    height: auto;
+}
+
+.quote {
+    width: 45px;
+    height: auto;
+    vertical-align: top;   
+    margin-right: 8px;   
+    display: inline-block;
+}
+
+hr {
+    border: 0;                
+    height: 2px;               
+    background-color: #c62828; 
+    width: 300px;              
+    margin: 16px 0;            
+    margin-left: 0;            
+}
+
+.tag {
+    width: 24px;           /* tamanho da imagem */
+    height: auto;
+    display: inline-block;  /* mantém na mesma linha do texto */
+    vertical-align: middle; /* alinha verticalmente com o texto */
+    margin-left: 4px;       /* espaço entre texto e imagem */
+}
